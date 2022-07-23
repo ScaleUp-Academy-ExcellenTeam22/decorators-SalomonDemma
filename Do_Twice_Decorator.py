@@ -14,5 +14,17 @@ def do_twice(func: Optional[callable], *args, **kwargs) -> tuple:
     return func(*args, **kwargs), func(*args, **kwargs)
 
 
+@do_twice
+def increase_by_on(num: int) -> int:
+    """
+    A function to demonstrate the decorator.
+    The function gets an integer and increases its value by one.
+    :param num: An integer number.
+    :return: The integer parameter received increased by one.
+    """
+    return num + 1
+
+
 if __name__ == "__main__":
-    pass
+    print(increase_by_on(5))
+
