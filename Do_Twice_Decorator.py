@@ -26,5 +26,5 @@ def increase_by_one(num: int) -> int:
 
 
 if __name__ == "__main__":
-    print(increase_by_on(5))
+    print(increase_by_one(5))
 
