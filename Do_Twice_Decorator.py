@@ -15,7 +15,7 @@ def do_twice(func: Optional[callable], *args, **kwargs) -> tuple:
 
 
 @do_twice
-def increase_by_on(num: int) -> int:
+def increase_by_one(num: int) -> int:
     """
     A function to demonstrate the decorator.
     The function gets an integer and increases its value by one.
